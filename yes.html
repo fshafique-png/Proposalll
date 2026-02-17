@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ask Her Out</title>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="tenor-gif-embed" data-postid="253027946666209433" data-share-method="host" data-aspect-ratio="1.37853"
+      data-width="100%">
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <h1>I knew it!😘</h1>
+    <h2>My Love</h2>
+    <p>Thanks for accepting my proposal</p>
+    <p>If you pressed "Yes," be honest and go back to let Farasat know that love him too.</p>
+  </div>
+  <div class="petals-container">
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+  </div>
+
+  <script>
+    window.addEventListener("load", () => {
+        for (let i = 0; i < 80; i++) {
+            createHeart();
+        }
+    });
+
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        
+        // Randomly choose between heart and kiss emojis
+        const emojis = ["❤️", "💋", "😘"];
+        heart.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = (Math.random() * 8 + 2) + "s"; // 2-10 seconds
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 10000); // 10 seconds
+    }
+  </script>
+</body>
+
+</html>
